@@ -7,16 +7,16 @@ public class Compte {
 	private double solde;
 	private static int NB_COMPTE=1;
 	
-	public Compte(Client client, double solde){
+	public Compte(Client client, double soldeInitial){
 		id = NB_COMPTE++;
 		setClient(client);
-		setSolde(solde);
+		setSolde(soldeInitial);
 	}
 
-	public void afficheCcompte(){
+	public void afficheCompte(){
 		client.afficheClient();
 		System.out.println("---");
-		System.out.println(solde + " euros");
+		System.out.println(solde + " euros\n");
 	}
 	
 	public void crediter(double montant){

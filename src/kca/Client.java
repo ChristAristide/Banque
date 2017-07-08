@@ -28,11 +28,11 @@ public class Client {
 
 	
 	public void afficheClient(){
-		System.out.println("N. " + getId() + "\n" 
+		System.out.println("\nN. " + getId() + "\n" 
 							+ sexe + " " + nom + " " + prenom + "\n"
 							+ dateNaissance + "\n"
 							+ adresse + "\n"
-							+ telephone + "\n");
+							+ telephone);
 	}
 	
 	public int getId() {
