@@ -14,10 +14,10 @@ public class Client {
 	private String dateNaissance; //gestion des dates à améliorer
 	private String adresse;
 	private String telephone;
-	private static int NB_CLIENT=1;
+	private static int NB_CLIENT=0;
 	
 	public Client(String sexe, String nom, String prenom, String dateNaissance, String adresse, String telephone){
-		id = NB_CLIENT++;
+		id = ++NB_CLIENT;
 		setSexe(sexe);
 		setNom(nom);
 		setPrenom(prenom);
@@ -26,7 +26,9 @@ public class Client {
 		setTelephone(telephone);			
 	}
 
-	
+	/**
+	 * Affiche les informations sur le client
+	 */
 	public void afficheClient(){
 		System.out.println("\nN. " + getId() + "\n" 
 							+ sexe + " " + nom + " " + prenom + "\n"

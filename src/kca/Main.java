@@ -60,6 +60,11 @@ public class Main {
 		
 		//Affichage de la liste des comptes de la banque
 		societeGenerale.afficheLesComptes();
+		
+		//Afficher les operations d'un compte
+		societeGenerale.getCompte(1).afficherLesOperations();
+		
+		
 				
 	}
 
